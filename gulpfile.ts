@@ -24,7 +24,8 @@ export function compile() {
     .pipe(replace("../cypress/utils.coffee", "../cypress_utils"))
     .pipe(replace("return $.contains(doc, el)", "return $.contains(doc as any, el)"))
     .pipe(replace("Cypress.browser.family", "String('chrome')"))
-    .pipe(replace('Cypress.isBrowser("firefox")', "!!false"))
+    .pipe(replace("Cypress.isBrowser('firefox')", "!!false"))
+    .pipe(replace("import Debug from 'debug'", "import { Debug } from '../debug'"))
     .pipe(
       typescript({
         target: "es5",
