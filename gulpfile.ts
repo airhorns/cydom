@@ -36,7 +36,7 @@ export function compile() {
         strictFunctionTypes: true,
         preserveWatchOutput: true,
         sourceMap: true,
-        importHelpers: true,
+        importHelpers: false,
         strictNullChecks: true,
         strict: true,
         forceConsistentCasingInFileNames: true,

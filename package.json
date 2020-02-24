@@ -1,6 +1,6 @@
 {
   "name": "cydom",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Cypress' DOM helpers outside Cypress",
   "author": "Harry Brundage <harry.brundage@gmail.com>",
   "license": "MIT",
@@ -10,9 +10,7 @@
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {
-    "tslib": "^1.11.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "jquery": "^3.4.1",
     "lodash": "^4.17.15"
